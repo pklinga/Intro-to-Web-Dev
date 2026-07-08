@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">🌿</div>
+                <h1>Bloom Valley Nursery</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="custom.html">Tips & Spotlight</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-header">
+            <h2>Our Botanical Collection</h2>
+            <!-- View Cart Button Requirement -->
+            <button id="view-cart-btn" class="cart-toggle-btn">🛒 View Cart (<span id="cart-count">0</span>)</button>
+        </section>
+
+        <!-- Catalog Section Grid -->
+        <section class="products-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="kiwi.jpg" alt="Hayward Kiwi Shrub" class="product-img">
+                </div>
+                <h3>Hayward Kiwi Shrub</h3>
+                <p>High-yield female cultivar, perfect for rich organic backyard soil setups.</p>
+                <span class="price">$24.99</span>
+                <button class="add-to-cart-btn" data-id="1" data-name="Hayward Kiwi Shrub" data-price="24.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="honeyberry.jpg" alt="Fresh organic honeyberries" class="product-img">
+                </div>
+                <h3>Honeyberry (Wojtek)</h3>
+                <p>Extremely frost-hardy berry plant with deliciously sweet, elongated fruits.</p>
+                <span class="price">$18.50</span>
+                <button class="add-to-cart-btn" data-id="2" data-name="Honeyberry Wojtek" data-price="18.50">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="asparagus.jpg" alt="Fresh green asparagus" class="product-img">
+                </div>
+                <h3>Asparagus (Aspalim F1)</h3>
+                <p>Early-yielding, highly productive green asparagus crowns for permanent beds.</p>
+                <span class="price">$12.00</span>
+                <button class="add-to-cart-btn" data-id="3" data-name="Asparagus Aspalim F1" data-price="12.00">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Shopping Cart Modal Window Requirement -->
+        <div id="cart-modal" class="modal" aria-hidden="true" role="dialog">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Your Shopping Cart</h2>
+                <div id="cart-items-container">
+                    <p>Your cart is empty.</p>
+                </div>
+                <div class="modal-actions">
+                    <button id="clear-cart-btn" class="btn-secondary">Clear Cart</button>
+                    <button id="process-order-btn" class="btn-primary">Process Order</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="footer-socials">
+                <a href="#">🌐 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a> | <a href="custom.html">Tips & Spotlight</a>
+            </div>
+            <p class="copyright">&copy; 2026 Bloom Valley Nursery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">🌿</div>
+                <h1>Bloom Valley Nursery</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="custom.html">Tips & Spotlight</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-bio">
+            <h2>Our Story</h2>
+            <p>Founded on the principles of ecological responsibility and natural synergy, Bloom Valley Nursery aims to provide robust plants that thrive. We follow holistic cultivation methods, minimizing interference to ensure that local ecosystems remain healthy, vibrant, and biologically diverse.</p>
+        </section>
+
+        <!-- Business Hours Table Requirement -->
+        <section class="business-hours">
+            <h2>Nursery Operating Hours</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day Of the Week</th>
+                        <th>Opening Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>08:00 AM - 05:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>09:00 AM - 02:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed (Resting the Soil)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Feedback & Custom Order Web Form Requirement -->
+        <section class="contact-form-section">
+            <h2>Inquiries & Custom Landscaping Orders</h2>
+            <form id="feedback-order-form">
+                <div class="form-group">
+                    <label for="user-name">Full Name:</label>
+                    <input type="text" id="user-name" name="userName" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="userEmail" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="user-phone">Phone Number:</label>
+                    <input type="tel" id="user-phone" name="userPhone" autocomplete="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="form-message">Feedback / Custom Order Details:</label>
+                    <textarea id="form-message" name="formMessage" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="custom-order-flag" name="isCustomOrder">
+                    <label for="custom-order-flag">This is a custom plant/landscaping bulk order request</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Submit Inquiry</button>
+                    <button type="reset" class="btn-secondary">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="footer-socials">
+                <a href="#">🌐 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a> | <a href="custom.html">Tips & Spotlight</a>
+            </div>
+            <p class="copyright">&copy; 2026 Bloom Valley Nursery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
